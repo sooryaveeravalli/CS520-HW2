@@ -1,6 +1,8 @@
 package controller;
 
 import view.ExpenseTrackerView;
+import model.ExpenseTrackerModel;
+import model.Transaction;
 
 import java.util.List;
 
@@ -43,6 +45,11 @@ public class ExpenseTrackerController {
     view.getTableModel().addRow(new Object[]{t.getAmount(), t.getCategory(), t.getTimestamp()});
     refresh();
     return true;
+  }
+
+  public void applyFilter(TransactionFilter filter) {
+      List<Transaction> filteredTransactions = filter.filter(model.getTransactions());
+      view.refreshTable(filteredTransactions);
   }
   
   // Other controller methods

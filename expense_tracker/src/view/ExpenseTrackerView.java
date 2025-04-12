@@ -16,6 +16,8 @@ public class ExpenseTrackerView extends JFrame {
 
   private JTable transactionsTable;
   private JButton addTransactionBtn;
+  private JButton filterByAmountBtn; // Declare filterByAmountBtn
+  private JButton filterByCategoryBtn; // Declare filterByCategoryBtn
   private JFormattedTextField amountField;
   private JTextField categoryField;
   private DefaultTableModel model;
@@ -29,10 +31,13 @@ public class ExpenseTrackerView extends JFrame {
     this.model = new DefaultTableModel(columnNames, 0);
 
     addTransactionBtn = new JButton("Add Transaction");
+    filterByAmountBtn = new JButton("Filter by Amount");
+    filterByCategoryBtn = new JButton("Filter by Category");
 
     // Create UI components
     JLabel amountLabel = new JLabel("Amount:");
     NumberFormat format = NumberFormat.getNumberInstance();
+    format.setGroupingUsed(false);
 
     amountField = new JFormattedTextField(format);
     amountField.setColumns(10);
@@ -51,9 +56,14 @@ public class ExpenseTrackerView extends JFrame {
     inputPanel.add(categoryLabel); 
     inputPanel.add(categoryField);
     inputPanel.add(addTransactionBtn);
+    System.out.println("addTransactionBtn: " + addTransactionBtn);
+    inputPanel.add(filterByAmountBtn);
+    inputPanel.add(filterByCategoryBtn);
   
-    JPanel buttonPanel = new JPanel();
+    JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
     buttonPanel.add(addTransactionBtn);
+    buttonPanel.add(filterByAmountBtn);
+    buttonPanel.add(filterByCategoryBtn);
   
     // Add panels to frame
     add(inputPanel, BorderLayout.NORTH);
@@ -61,7 +71,7 @@ public class ExpenseTrackerView extends JFrame {
     add(buttonPanel, BorderLayout.SOUTH);
   
     // Set frame properties
-    setSize(400, 300);
+    setSize(800, 600);
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     setVisible(true);
   
@@ -102,6 +112,14 @@ public class ExpenseTrackerView extends JFrame {
   // Other view methods
     public JTable getTransactionsTable() {
     return transactionsTable;
+  }
+
+  public JButton getFilterByAmountBtn() {
+      return filterByAmountBtn;
+  }
+
+  public JButton getFilterByCategoryBtn() {
+      return filterByCategoryBtn;
   }
 
   public double getAmountField() {
