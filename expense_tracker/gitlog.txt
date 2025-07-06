@@ -1,0 +1,65 @@
+commit 7b8d59aaf3a3c6d76b93a0368739001a29bd8fe1
+Author: Sai Soorya Rao Veeravalli <sveeravalli@Sais-MacBook-Air.local>
+Date:   Fri Apr 11 23:16:24 2025 -0400
+
+    Adding jdoc folder
+
+commit 2a9de563ebd0ebfffa8d4d00beafcaa8ba71e5bb
+Author: Sai Soorya Rao Veeravalli <sveeravalli@Sais-MacBook-Air.local>
+Date:   Fri Apr 11 23:11:52 2025 -0400
+
+    Updated README.md adding details about new functionality
+
+commit 5df6116998e97cf2f1ddf9fc5454244a1ceb9d63
+Author: Sai Soorya Rao Veeravalli <sveeravalli@Sais-MacBook-Air.local>
+Date:   Fri Apr 11 23:01:32 2025 -0400
+
+    Adding tests for different scenarios mentioned in Testing module of homework
+
+commit caf0572366e8d336c1d007d9038221107420bc0c
+Author: Sai Soorya Rao Veeravalli <sveeravalli@Sais-MacBook-Air.local>
+Date:   Fri Apr 11 22:58:54 2025 -0400
+
+    Removing print messages
+
+commit a96372250acae26513fd759e9623647c53af7f75
+Author: Sai Soorya Rao Veeravalli <sveeravalli@Sais-MacBook-Air.local>
+Date:   Fri Apr 11 22:51:44 2025 -0400
+
+    Adding Amount and Category filters using strategy design pattern as part of extensibility concept implementation
+
+commit 62c34a499b5bd5843e20ce942d1a6fb38f32bd0c
+Author: Sai Soorya Rao Veeravalli <sveeravalli@Sais-MacBook-Air.local>
+Date:   Fri Apr 11 22:25:01 2025 -0400
+
+    Adding modularity using open-closed principle for the data related to transactions
+
+commit b21da9fb7fd47c25881d7fc014a932365cb1552b
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Sat Sep 2 02:42:57 2023 -0400
+
+    Build file update
+
+commit ccabaffc7ff1b7098979a63fcbadf48bc04915c3
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Tue Aug 29 14:49:22 2023 -0400
+
+    File Update
+
+commit 2574c71001a74c29f01f4a84fa99f450158f2f10
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Wed Aug 9 14:11:14 2023 -0400
+
+    Total Cost and Serial update
+
+commit d29d2c8acb4145ce700e0456ccc334da0cad3dc2
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Wed Aug 9 12:54:46 2023 -0400
+
+    HW2 template files
+
+commit 6a51d8019c39a33d581ce078ae8887a022ee806d
+Author: Mahbuba Tasmin <tasmin153@gmail.com>
+Date:   Tue Aug 8 21:48:41 2023 -0400
+
+    Initial commit
